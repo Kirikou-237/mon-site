@@ -12,6 +12,7 @@ body{
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +24,7 @@ body{
 }
 
 .stopwatch{
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,44 +32,15 @@ body{
 }
 
 .timer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     font-size: 40px;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    animation: pulse 5s infinite normal;
 }
-
-@keyframes pulse{
-    0%{
-        opacity: 1;
-        scale: 0.5;
-        /* background-color: green; */
-        transform: translateX(-50%);
-    }
-    50%{
-        opacity: 1;
-        scale: 1;
-        /* background-color: red; */
-        transform: translateX(0%);
-    }
-    100%{
-        opacity: 1;
-        scale: 0.5;
-        /* background-color: yellow; */
-        transform: translateX(50%);
-    }
-}
-
-/* @keyframes pulse {
-    from{
-        transform: scale(0.50);
-    }
-    
-    to{
-        transform: scale(1.05);
-    }
-} */
 
 .timer span{
     width: 110px;
@@ -76,11 +49,14 @@ body{
 }
 
 .contorls{
+
+    width: 348px;
     display: flex;
-    gap: 1rem;
+   gap: 3px;
 }
 
 button{
+    width: 200px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     background-color: #103d65;
