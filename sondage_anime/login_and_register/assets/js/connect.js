@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         password: password
     });
         // Recharge la page
-        window.location.href =`../site de vote en ligne/index.html`;
+        window.location.href =`../sondages/index.html`;
 
 });
 
