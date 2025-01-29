@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
+    <title>register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-circle">
+            <img id="image"  src="./assets/images/logo.jpg" alt="">
+        </div>
+        
+        <h1>Créer un compte</h1>
+
+        <!-- creation du formulaire -->
+        <form id="registerForm">
+            <div class="form-group">
+                <i><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/user.png"></i>
+                <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <i><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/user.png"></i>
+                <input type="text" id="user" placeholder="Nom d'utilisateur" required>
+            </div>
+
+            <div class="form-group">
+                <i><img width="20" height="20" src="https://img.icons8.com/carbon-copy/100/new-post--v1.png" ></i>
+                <input type="email" id="email" placeholder="Votre email" required>
+            </div>
+
+            <div class="form-group">
+                <i><img width="20" height="20" src="https://img.icons8.com/fluency/48/password--v2.png"></i>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+            </div>
+
+            <div class="form-group">
+                <i><img width="20" height="20" src="https://img.icons8.com/fluency/48/password--v2.png"></i>
+                <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe" required>
+            </div>
+
+            <button type="submit" class="register-btn">S'inscrire</button>
+        </form>
+
+        <div class="login-link">
+           <span>Déjà inscrit ?</span> <a href="./connect.html"> Se connecter</a>
+        </div>
+    </div>
+
+    <script src="./assets/js/register.js"></script>
+</body>
+</html>

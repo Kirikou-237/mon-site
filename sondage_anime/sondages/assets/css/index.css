@@ -1,0 +1,159 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+:root {
+    --primary-color: #4CAF50; /* Vert pour le thème principal */
+    --secondary-color: linear-gradient(135deg, #30e9a5 10%,#30e9a5, #86d4c0 90%, #86d4c0); /* Couleur de fond douce */
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Styles généraux */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-image: var(--secondary-color);
+    line-height: 1.6;
+    height: 100vh !important;
+    /* border: 3px solid black; */
+}
+
+header {
+    /* 81px */
+    height: 8vh; 
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    padding: 25px;
+    height: 86vh;
+    overflow-y: scroll ;
+    /* border: 3px solid black; */
+    background-image: var(--secondary-color);
+}
+footer {
+    /* 64.8px */
+    height: 6vh;
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    
+}
+
+
+/* Classes utilitaires */
+.container {
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form div {
+    width: 500px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    /*  */
+    
+}
+.card1:hover{
+    background-color: #c0bdbdcb;
+    transition: 1s;
+}
+
+
+
+
+/* Styles pour les petits écrans (téléphones) */
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 14px;
+    }
+    header {
+      font-size: 18px;
+      padding: 0px;
+       
+      /* position: relative;
+      left: 100%; */
+    }
+  
+   nav{
+    height: 100%;
+   }
+  
+    nav a {
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #555;
+    }
+  
+    main {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .card {
+        width: 100%;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        
+    }
+    .card1:hover{
+        background-color: #c0bdbdcb;
+        transition: 1s;
+    }
+    
+  }
